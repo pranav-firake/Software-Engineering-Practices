@@ -1,0 +1,61 @@
+---
+- hosts: webservers
+  connection: local
+  tasks:
+    - action: ping
+
+- hosts: webservers
+  connection: local
+  tasks:
+      - name: nodejs setup
+        #sudo: yes
+        become: yes
+        become_method: sudo
+        shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+      - name: install nodejs and npm
+        #sudo: yes
+        become: yes
+        become_method: sudo
+        shell: apt-get install -y nodejs
+      - name: Install forever
+        become: yes
+        become_method: sudo
+        npm: 
+          name: forever 
+          global: yes 
+          state: present
+      - name: Install git
+        become: yes
+        become_method: sudo
+        apt:
+          name: git
+          state: present
+          update_cache: true
+      - name: git clone repo
+        git: 
+          repo: https://github.com/CSC-DevOps/App.git 
+          dest: ./App
+          clone: yes
+      - name: install all npm packages
+        npm:
+          path: "{{ playbook_dir }}/App"
+      - name: run app using forever
+        command: forever start "{{ playbook_dir }}/App/main.js" 8000
+      - name: Install bash, openssl, openssh-client, and openssh-server
+        become: yes
+        become_method: sudo
+        apt: name={{item}} state=latest
+        with_items:
+         - bash
+         - openssl
+         - openssh-client
+         - openssh-server
+      - name: clear contents of  /tmp directory
+        become: yes
+        become_method: sudo
+        file: path=/tmp/ state=absent
+      - pause: seconds=5 prompt="waiting for 5 seconds"
+      - name: create the tmp directory again
+        become: yes
+        become_method: sudo
+        file: path=/tmp/* state=directory

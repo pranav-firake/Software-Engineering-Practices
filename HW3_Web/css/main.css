@@ -1,0 +1,64 @@
+.tweet-img{
+      width: 65px;
+    height: 65px;
+    border-radius: 5px;
+    float: left;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.row>div .col-sm-1{
+      width:8.33% !important;
+}
+.row{
+      clear: both;
+      border-bottom: 1px solid #e1e8ed;      
+          margin-top: 10px;
+}
+.left,.right{
+      float: left;
+}
+.ione:hover{
+      color:blue;
+}
+.itwo:hover{
+      color:green;
+}
+.ithree:hover{
+      color:red;
+}
+.tweet-contentpic{
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+      
+}
+/*.retweet,.likes{
+          font-size: 13px;
+}*/
+.col-sm-1{
+          width: 9.33% !important;
+}
+.tweet-username{
+      font-weight: bold;
+    color: #292f33;
+    padding-top: 2px;
+    margin-top: 3px;
+    font-size: 18px;
+    line-height: 1.25;
+}
+.tweet-username:hover{
+      color: #0000CC;
+      text-decoration:underline;
+      cursor: pointer;
+}
+.tweet-userID,.tweet-dot,.tweet-timeago{
+      color: #8899a6;
+      margin-left:2px;
+          font-size: 13px;
+}
+.tweet-icons{
+      margin: 12px;
+      margin-bottom: 40px;
+          color: grey;
+}
