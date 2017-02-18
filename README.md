@@ -1,5 +1,5 @@
 # my-CSC-510-SE
-This is repository for CSC 510 Software Engineering coursework. Code has been forked from college private github (github.ncsu.edu).
+This is repository for my work for CSC 510 Software Engineering coursework. Code has been forked from my college private github (github.ncsu.edu/ppfirake).
 Course was taken in NC State University by Dr. Parnin. 
 
 Please find homeworks added : 
@@ -23,6 +23,13 @@ Please find homeworks added :
 - Basic installation scipts
 - forever.js usage
 
+
+References : 
+
+1. Course Repo by Dr. Christopher Parning [CSC 510](https://github.com/CSC-510/Course)
+2. Slides by Dr. Parnin in course.
+3. Wikipedia
+4. Stackoverflow threads
 
 
 
