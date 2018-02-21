@@ -27,7 +27,7 @@ Please find homeworks added :
 
 References : 
 
-1. Course Repo by Dr. Christopher Parning [CSC 510](https://github.com/CSC-510/Course)
+1. Course Repo by Dr. Christopher Parnin [CSC 510](https://github.com/CSC-510/Course)
 2. Slides by Dr. Parnin in course.
 3. Wikipedia
 4. Stackoverflow threads
