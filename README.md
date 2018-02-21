@@ -1,4 +1,5 @@
-# my-CSC-510-SE
+## Software Engineering Practices
+
 This is repository for my work for CSC 510 Software Engineering coursework. Code has been forked from my college private github (github.ncsu.edu/ppfirake).
 Course was taken in NC State University by Dr. Parnin. 
 
